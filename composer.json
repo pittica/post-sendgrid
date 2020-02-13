@@ -1,0 +1,38 @@
+{
+  "name": "pittica/post-sendgrid",
+  "homepage": "https://github.com/pittica/post-sendgrid",
+  "description": "Send e-mails using SendGrid from HTTP POST",
+  "type": "project",
+  "license": "MIT",
+  "keywords": [
+    "email",
+    "sendgrid",
+    "post"
+  ],
+  "authors": [
+    {
+      "name": "Lucio Benini",
+      "email": "info@pittica.com",
+      "homepage": "https://pittica.com",
+      "role": "Web Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Pittica\\PostSendGrid\\": "src"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "ext-curl": "*",
+    "ext-json": "*",
+    "php": "^7.1",
+    "sendgrid/sendgrid": "^7.0",
+    "guzzlehttp/guzzle": "^6.5.2",
+    "google/recaptcha": "^1.2"
+  },
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  }
+}
