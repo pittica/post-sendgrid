@@ -81,7 +81,8 @@ class Application
                 $name = $email;
             }
 
-            $message->setFrom($email, $name);
+            $message->setFrom($this->_config['sender']['address'], $name);
+            $message->setReplyTo($email, $name);
             $message->setSubject($subject ? $subject : ('Message from: ' . $name));
             $message->addTo($this->_config['sender']['address'], $this->_config['sender']['name']);
             $message->addContent("text/plain", $vars->toString());
